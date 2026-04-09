@@ -44,7 +44,6 @@ author_profile: true
   border-radius: 12px;
   cursor: pointer;
   transition: border-color 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
-  background: #fff;
   pointer-events: auto;
 }
 
