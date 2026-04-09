@@ -1,0 +1,11 @@
+---
+title: "Gaze cueing improves pattern recognition of histology learners"
+collection: publications
+category: manuscripts
+permalink: /publication/2024-01-01-gaze-cueing-pattern-recognition-histology
+excerpt: '<img src="https://anatomypubs.onlinelibrary.wiley.com/cms/asset/4b2eaf91-6a84-4e0a-a214-1f11873edf64/ase.v17.7.cover.jpg" width="150" align="left" style="margin-right:15px;"> Expert visual perception is not simply a product of accumulated experience, it is characterized by highly efficient, task-directed gaze behavior that rapidly isolates diagnostically relevant features. For novice learners, these attentional strategies are invisible. Gaze cueing makes them explicit, overlaying recorded expert eye movements onto learning materials to give students direct access to where experts look and why. <br><br> This study examined whether exposure to expert gaze cues during histology training improves pattern recognition in medical students. The results showed that gaze cueing not only enhanced recognition performance but also reduced cognitive load during image interpretation, with effects most pronounced when stimuli were presented briefly, precisely the conditions that challenge fast, schematic visual processing. <br><br> The findings carry a clear implication: the gap between novice and expert perception in histology is not purely a matter of knowledge, but of visual attention. Gaze cueing offers a scalable, low-cost method for bridging this gap, and positions attentional guidance as a first-class instructional principle in the teaching of visual expertise across image-based medical disciplines.'
+date: 2024-01-01
+venue: 'Anatomical Sciences Education'
+paperurl: 'https://doi.org/10.1002/ase.2498'
+citation: 'Bellstedt, M., Holtrup, A., Otto, N., Berndt, M., Scherff, A. D., Papan, C., Robitzsch, A., Missler, M., & Darici, D. (2024). Gaze cueing improves pattern recognition of histology learners. <i>Anatomical Sciences Education</i>, <i>17</i>(7), 1461–1472. https://doi.org/10.1002/ase.2498'
+---

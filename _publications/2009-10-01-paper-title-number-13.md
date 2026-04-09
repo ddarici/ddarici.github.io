@@ -1,0 +1,11 @@
+---
+title: "How distractions undermine attentional synchronisation in work-based learning: A randomised controlled study using dual mobile eye-tracking"
+collection: publications
+category: manuscripts
+permalink: /publication/2025-01-01-distractions-attentional-synchronisation-dual-eye-tracking
+excerpt: '<img src="https://onlinelibrary.wiley.com/cms/asset/d5f0af35-6691-4f6d-84a8-52292fed3a56/jcal.v41.3.cover.jpg" width="150" align="left" style="margin-right:15px;"> When a teacher and student share the same visual field, learning is shaped not only by what the teacher demonstrates but by how well the two align their attention in the moment. Attentional synchronisation (the degree to which teacher and learner look at the same thing at the same time) represents a measurable indicator of joint cognitive engagement, and its disruption may be one of the most consequential yet underexamined costs of distraction in clinical training environments. <br><br> In this randomised controlled study, 29 medical students were assigned to either a distraction or control condition during a Transesophageal Echocardiography training in a simulated operating room setting. The distraction group showed substantially lower attentional synchronisation than controls (41.59% vs. 50.96%, Cohen''s d = 1.06), and this reduction was accompanied by significantly poorer practical and visual performances, longer task completion times, and higher intrinsic and extraneous cognitive loads.  <br><br> Across both groups, joint visual attention between teacher and student was the strongest positive predictor of learning outcomes.  The findings establish attentional synchronisation as a mechanism through which distractions degrade work-based learning, and position shared gaze as an empirically tractable target for designing more effective and distraction-resilient clinical teaching environments.'
+date: 2025-01-01
+venue: 'Journal of Computer Assisted Learning'
+paperurl: 'https://doi.org/10.1111/jcal.70059'
+citation: 'Sieg, L., Eismann, H., Schneider, B., Karsten, J., & Darici, D. (2025). How distractions undermine attentional synchronisation in work-based learning: A randomised controlled study using dual mobile eye-tracking. <i>Journal of Computer Assisted Learning</i>, <i>41</i>(3), Article e70059. https://doi.org/10.1111/jcal.70059'
+---

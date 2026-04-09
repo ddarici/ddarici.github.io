@@ -1,0 +1,11 @@
+---
+title: "Webcam-based eye-tracking to measure visual expertise of medical students during online histology training"
+collection: publications
+category: manuscripts
+permalink: /publication/2023-01-01-webcam-eye-tracking-histology-training
+excerpt: '<img src="https://journals.publisso.de/de/system/getPicture/ul/596" width="150" align="left" style="margin-right:15px;"> Visual expertise, the ability to efficiently direct gaze toward diagnostically relevant features, is a core competency in image-based medical disciplines such as histology and radiology. While laboratory-grade infrared eye-trackers have long been used to study the development of this skill, their cost and technical demands have limited scalability in educational settings. <br><br> This study investigated the feasibility of webcam-based eye-tracking as a cost-effective alternative for measuring visual expertise within a curricular online-only histology course during the 2021 summer term. At two timepoints, third-semester medical students were asked to diagnose a series of histological slides while their eye movements were recorded, with eye metrics, performance scores, and behavioral measures analyzed using variance analyses and multiple regression models.  <br><br> The findings demonstrate that webcam eye-tracking is a feasible methodology for capturing gaze behavior in large student cohorts outside the laboratory. The study provides a foundation for scalable, evidence-based assessment of perceptual skill development in histology education, and contributes to growing efforts to integrate eye-tracking methodology into routine medical training contexts.'
+date: 2023-01-01
+venue: 'GMS Journal for Medical Education'
+paperurl: 'https://doi.org/10.3205/zma001642'
+citation: 'Darici, D., Reissner, C., & Missler, M. (2023). Webcam-based eye-tracking to measure visual expertise of medical students during online histology training. <i>GMS Journal for Medical Education</i>, <i>40</i>(5), Doc60. https://doi.org/10.3205/zma001642'
+---

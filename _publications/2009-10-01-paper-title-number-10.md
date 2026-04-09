@@ -1,0 +1,11 @@
+---
+title: "Large language models improve clinical decision making of medical students through patient simulation and structured feedback"
+collection: publications
+category: manuscripts
+permalink: /publication/2024-12-01-llm-clinical-decision-making-medical-students
+excerpt: '<img src="https://media.springernature.com/w316/springer-static/cover-hires/journal/12909?as=webp" width="150" align="left" style="margin-right:15px;"> Clinical decision-making depends on the ability to gather, evaluate, and interpret diagnostic information through conversation, a skill that has traditionally required access to real or simulated patients. Large language models (LLMs) offer a novel and scalable alternative, capable of simulating patient-doctor interactions on demand and, critically, of providing immediate structured feedback on student performance. <br><br> After only four training sessions, students who received AI-generated feedback on their simulated history-taking conversations substantially outperformed those who engaged in simulation alone, with a strong effect size. Improvements were most pronounced in the subdomains of creating context and securing information. Crucially, simulation without feedback produced no measurable gain, showing that it is the combination of practice and structured reflection that drives skill acquisition. <br><br> The findings position LLM-based feedback not merely as a technological convenience but as an active ingredient in clinical training. By making expert-level evaluative commentary instantly available at scale, AI feedback systems can compress the feedback loop that separates novice performance from expert clinical reasoning with direct implications for how medical curricula prepare students for real patient encounters.'
+date: 2024-12-01
+venue: 'BMC Medical Education'
+paperurl: 'https://doi.org/10.1186/s12909-024-06399-7'
+citation: 'Brügge, E., Ricchizzi, S., Arenbeck, M., Keller, M. N., Schur, L., Stummer, W., Holling, M., Lu, M. H., & Darici, D. (2024). Large language models improve clinical decision making of medical students through patient simulation and structured feedback: A randomized controlled trial. <i>BMC Medical Education</i>, <i>24</i>, Article 1391. https://doi.org/10.1186/s12909-024-06399-7'
+---

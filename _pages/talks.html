@@ -6,11 +6,385 @@ author_profile: true
 ---
 
 {% if site.talkmap_link == true %}
-
 <p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
-
 {% endif %}
 
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
-{% endfor %}
+<style>
+  /* ── Table container: inherit page font exactly ── */
+  .talks-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.2em;
+    font-family: inherit;
+    font-size: 1em;
+  }
+
+  /* ── Header row ── */
+  .talks-table thead tr {
+    border-bottom: 2px solid #bbb;
+  }
+  .talks-table th {
+    text-align: left;
+    padding: 0.5em 1em;
+    font-size: 0.75em;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-weight: 600;
+  }
+
+  /* ── Body rows ── */
+  .talks-table tbody tr {
+    border-bottom: 1px solid #e8e8e8;
+    transition: background 0.15s;
+  }
+  .talks-table tbody tr:last-child {
+    border-bottom: none;
+  }
+  .talks-table tbody tr:hover {
+    background-color: #f5f8fb;
+  }
+  .talks-table td {
+    padding: 0.9em 1em;
+    vertical-align: middle;
+    font-size: 1em;
+  }
+
+  /* ── Column 1: Logo only ── */
+  .talk-logo {
+    width: 120px;
+    text-align: center;
+  }
+  .talk-logo img {
+    max-width: 100px;
+    max-height: 65px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+  }
+  /* Fallback pill when no logo is provided */
+  .talk-logo-placeholder {
+    display: inline-block;
+    padding: 0.25em 0.6em;
+    background: #e2e8f0;
+    border-radius: 4px;
+    font-size: 0.8em;
+    color: #666;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    max-width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* ── Column 2: Conference name + full date ── */
+  .talk-conference {
+    width: 170px;
+  }
+  .talk-venue-label {
+    display: block;
+    font-size: 0.85em;
+    color: #444;
+    font-weight: 600;
+  }
+  .talk-date {
+    display: block;
+    font-size: 0.85em;
+    color: #777;
+    margin-top: 0.2em;
+  }
+
+  /* ── Column 3: Talk title ── */
+  .talk-title a {
+    font-size: 1em;
+    font-weight: 600;
+    color: #1a1a2e;
+    text-decoration: none;
+    line-height: 1.4;
+  }
+  .talk-title a:hover {
+    color: #0077cc;
+    text-decoration: underline;
+  }
+  .talk-type-badge {
+    display: inline-block;
+    margin-top: 0.3em;
+    font-size: 0.75em;
+    color: #fff;
+    background: #6c757d;
+    border-radius: 3px;
+    padding: 0.1em 0.45em;
+    font-weight: 500;
+    vertical-align: middle;
+  }
+  .talk-excerpt {
+    font-size: 0.85em;
+    color: #777;
+    margin-top: 0.3em;
+    line-height: 1.4;
+  }
+
+  /* ── Column 4: Location ── */
+  .talk-location {
+    width: 190px;
+    font-size: 1em;
+    color: #444;
+  }
+  .talk-location i {
+    color: #e05c5c;
+    margin-right: 0.35em;
+  }
+
+  /* ── Column 5: Country flag ── */
+  .talk-flag {
+    width: 60px;
+    text-align: center;
+  }
+  .talk-flag .flag-emoji {
+    font-size: 1.8em;
+    line-height: 1;
+    display: block;
+  }
+  .talk-flag .flag-label {
+    display: block;
+    font-size: 0.7em;
+    color: #999;
+    margin-top: 0.2em;
+    letter-spacing: 0.03em;
+  }
+  .talk-flag .flag-unknown {
+    font-size: 0.75em;
+    color: #bbb;
+  }
+
+  /* ── Responsive: stack on small screens ── */
+  @media (max-width: 600px) {
+    .talks-table thead { display: none; }
+    .talks-table tbody tr {
+      display: block;
+      margin-bottom: 1.2em;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 0.6em;
+    }
+    .talks-table td {
+      display: block;
+      width: 100% !important;
+      text-align: left !important;
+      padding: 0.4em 0.6em;
+    }
+    .talk-logo-date { text-align: left; }
+    .talk-logo-date img { margin: 0 0 0.3em 0; }
+    .talk-flag { text-align: left !important; }
+  }
+</style>
+
+<table class="talks-table">
+  <thead>
+    <tr>
+      <th>Logo</th>
+      <th>Conference &amp; Date</th>
+      <th>Talk Title</th>
+      <th>Location</th>
+      <th>Country</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for post in site.talks reversed %}
+    <tr>
+
+      <!-- ── Column 1: Logo only ── -->
+      <td class="talk-logo">
+        {% if post.logo %}
+          <img src="{{ post.logo }}" alt="{{ post.venue }} logo" />
+        {% else %}
+          <span class="talk-logo-placeholder">{{ post.venue }}</span>
+        {% endif %}
+      </td>
+
+      <!-- ── Column 2: Conference name + full date ── -->
+      <td class="talk-conference">
+        {% if post.venue %}
+          <span class="talk-venue-label">{{ post.venue }}</span>
+        {% endif %}
+        {% if post.date %}
+          <span class="talk-date">{{ post.date | date: "%b %Y" }}</span>
+        {% endif %}
+      </td>
+
+      <!-- ── Column 3: Title + type + optional excerpt ── -->
+      <td class="talk-title">
+        <b>{{ post.title }}</b>
+        {% if post.talk_type %}
+          <span class="talk-type-badge">{{ post.talk_type }}</span>
+        {% elsif post.type %}
+          <span class="talk-type-badge">{{ post.type }}</span>
+        {% endif %}
+        {% if post.excerpt %}
+          <div class="talk-excerpt">{{ post.excerpt | markdownify | remove: "<p>" | remove: "</p>" }}</div>
+        {% endif %}
+      </td>
+
+      <!-- ── Column 4: Location ── -->
+      <td class="talk-location">
+        {% if post.location %}
+          {{ post.location }}
+        {% else %}
+          &mdash;
+        {% endif %}
+      </td>
+
+      <!-- ── Column 5: Country flag (derived from post.country) ── -->
+      <td class="talk-flag">
+        {% if post.country %}
+          {% assign c = post.country | upcase | strip %}
+          {% comment %} Map country name or ISO-2 code to emoji flag {% endcomment %}
+          {% if c == "US" or c == "USA" or c == "UNITED STATES" or c == "UNITED STATES OF AMERICA" %}
+            {% assign flag = "🇺🇸" %}{% assign clabel = "US" %}
+          {% elsif c == "GB" or c == "UK" or c == "UNITED KINGDOM" or c == "ENGLAND" or c == "BRITAIN" %}
+            {% assign flag = "🇬🇧" %}{% assign clabel = "UK" %}
+          {% elsif c == "DE" or c == "GERMANY" or c == "DEUTSCHLAND" %}
+            {% assign flag = "🇩🇪" %}{% assign clabel = "DE" %}
+          {% elsif c == "FR" or c == "FRANCE" %}
+            {% assign flag = "🇫🇷" %}{% assign clabel = "FR" %}
+          {% elsif c == "IT" or c == "ITALY" or c == "ITALIA" %}
+            {% assign flag = "🇮🇹" %}{% assign clabel = "IT" %}
+          {% elsif c == "ES" or c == "SPAIN" or c == "ESPAÑA" %}
+            {% assign flag = "🇪🇸" %}{% assign clabel = "ES" %}
+          {% elsif c == "NL" or c == "NETHERLANDS" or c == "THE NETHERLANDS" or c == "HOLLAND" %}
+            {% assign flag = "🇳🇱" %}{% assign clabel = "NL" %}
+          {% elsif c == "BE" or c == "BELGIUM" %}
+            {% assign flag = "🇧🇪" %}{% assign clabel = "BE" %}
+          {% elsif c == "CH" or c == "SWITZERLAND" %}
+            {% assign flag = "🇨🇭" %}{% assign clabel = "CH" %}
+          {% elsif c == "AT" or c == "AUSTRIA" %}
+            {% assign flag = "🇦🇹" %}{% assign clabel = "AT" %}
+          {% elsif c == "SE" or c == "SWEDEN" %}
+            {% assign flag = "🇸🇪" %}{% assign clabel = "SE" %}
+          {% elsif c == "NO" or c == "NORWAY" %}
+            {% assign flag = "🇳🇴" %}{% assign clabel = "NO" %}
+          {% elsif c == "DK" or c == "DENMARK" %}
+            {% assign flag = "🇩🇰" %}{% assign clabel = "DK" %}
+          {% elsif c == "FI" or c == "FINLAND" %}
+            {% assign flag = "🇫🇮" %}{% assign clabel = "FI" %}
+          {% elsif c == "PL" or c == "POLAND" %}
+            {% assign flag = "🇵🇱" %}{% assign clabel = "PL" %}
+          {% elsif c == "PT" or c == "PORTUGAL" %}
+            {% assign flag = "🇵🇹" %}{% assign clabel = "PT" %}
+          {% elsif c == "GR" or c == "GREECE" %}
+            {% assign flag = "🇬🇷" %}{% assign clabel = "GR" %}
+          {% elsif c == "CZ" or c == "CZECH REPUBLIC" or c == "CZECHIA" %}
+            {% assign flag = "🇨🇿" %}{% assign clabel = "CZ" %}
+          {% elsif c == "HU" or c == "HUNGARY" %}
+            {% assign flag = "🇭🇺" %}{% assign clabel = "HU" %}
+          {% elsif c == "RO" or c == "ROMANIA" %}
+            {% assign flag = "🇷🇴" %}{% assign clabel = "RO" %}
+          {% elsif c == "RU" or c == "RUSSIA" %}
+            {% assign flag = "🇷🇺" %}{% assign clabel = "RU" %}
+          {% elsif c == "TR" or c == "TURKEY" or c == "TÜRKIYE" %}
+            {% assign flag = "🇹🇷" %}{% assign clabel = "TR" %}
+          {% elsif c == "CN" or c == "CHINA" %}
+            {% assign flag = "🇨🇳" %}{% assign clabel = "CN" %}
+          {% elsif c == "JP" or c == "JAPAN" %}
+            {% assign flag = "🇯🇵" %}{% assign clabel = "JP" %}
+          {% elsif c == "KR" or c == "SOUTH KOREA" or c == "KOREA" %}
+            {% assign flag = "🇰🇷" %}{% assign clabel = "KR" %}
+          {% elsif c == "IN" or c == "INDIA" %}
+            {% assign flag = "🇮🇳" %}{% assign clabel = "IN" %}
+          {% elsif c == "AU" or c == "AUSTRALIA" %}
+            {% assign flag = "🇦🇺" %}{% assign clabel = "AU" %}
+          {% elsif c == "NZ" or c == "NEW ZEALAND" %}
+            {% assign flag = "🇳🇿" %}{% assign clabel = "NZ" %}
+          {% elsif c == "CA" or c == "CANADA" %}
+            {% assign flag = "🇨🇦" %}{% assign clabel = "CA" %}
+          {% elsif c == "MX" or c == "MEXICO" %}
+            {% assign flag = "🇲🇽" %}{% assign clabel = "MX" %}
+          {% elsif c == "BR" or c == "BRAZIL" or c == "BRASIL" %}
+            {% assign flag = "🇧🇷" %}{% assign clabel = "BR" %}
+          {% elsif c == "AR" or c == "ARGENTINA" %}
+            {% assign flag = "🇦🇷" %}{% assign clabel = "AR" %}
+          {% elsif c == "CL" or c == "CHILE" %}
+            {% assign flag = "🇨🇱" %}{% assign clabel = "CL" %}
+          {% elsif c == "CO" or c == "COLOMBIA" %}
+            {% assign flag = "🇨🇴" %}{% assign clabel = "CO" %}
+          {% elsif c == "ZA" or c == "SOUTH AFRICA" %}
+            {% assign flag = "🇿🇦" %}{% assign clabel = "ZA" %}
+          {% elsif c == "NG" or c == "NIGERIA" %}
+            {% assign flag = "🇳🇬" %}{% assign clabel = "NG" %}
+          {% elsif c == "EG" or c == "EGYPT" %}
+            {% assign flag = "🇪🇬" %}{% assign clabel = "EG" %}
+          {% elsif c == "IL" or c == "ISRAEL" %}
+            {% assign flag = "🇮🇱" %}{% assign clabel = "IL" %}
+          {% elsif c == "AE" or c == "UAE" or c == "UNITED ARAB EMIRATES" %}
+            {% assign flag = "🇦🇪" %}{% assign clabel = "AE" %}
+          {% elsif c == "SG" or c == "SINGAPORE" %}
+            {% assign flag = "🇸🇬" %}{% assign clabel = "SG" %}
+          {% elsif c == "HK" or c == "HONG KONG" %}
+            {% assign flag = "🇭🇰" %}{% assign clabel = "HK" %}
+          {% elsif c == "TW" or c == "TAIWAN" %}
+            {% assign flag = "🇹🇼" %}{% assign clabel = "TW" %}
+          {% elsif c == "TH" or c == "THAILAND" %}
+            {% assign flag = "🇹🇭" %}{% assign clabel = "TH" %}
+          {% elsif c == "ID" or c == "INDONESIA" %}
+            {% assign flag = "🇮🇩" %}{% assign clabel = "ID" %}
+          {% elsif c == "MY" or c == "MALAYSIA" %}
+            {% assign flag = "🇲🇾" %}{% assign clabel = "MY" %}
+          {% elsif c == "PH" or c == "PHILIPPINES" %}
+            {% assign flag = "🇵🇭" %}{% assign clabel = "PH" %}
+          {% elsif c == "VN" or c == "VIETNAM" %}
+            {% assign flag = "🇻🇳" %}{% assign clabel = "VN" %}
+          {% elsif c == "PK" or c == "PAKISTAN" %}
+            {% assign flag = "🇵🇰" %}{% assign clabel = "PK" %}
+          {% elsif c == "IR" or c == "IRAN" %}
+            {% assign flag = "🇮🇷" %}{% assign clabel = "IR" %}
+          {% elsif c == "SA" or c == "SAUDI ARABIA" %}
+            {% assign flag = "🇸🇦" %}{% assign clabel = "SA" %}
+          {% elsif c == "UA" or c == "UKRAINE" %}
+            {% assign flag = "🇺🇦" %}{% assign clabel = "UA" %}
+          {% elsif c == "IE" or c == "IRELAND" %}
+            {% assign flag = "🇮🇪" %}{% assign clabel = "IE" %}
+          {% elsif c == "HR" or c == "CROATIA" %}
+            {% assign flag = "🇭🇷" %}{% assign clabel = "HR" %}
+          {% elsif c == "SK" or c == "SLOVAKIA" %}
+            {% assign flag = "🇸🇰" %}{% assign clabel = "SK" %}
+          {% elsif c == "SI" or c == "SLOVENIA" %}
+            {% assign flag = "🇸🇮" %}{% assign clabel = "SI" %}
+          {% elsif c == "RS" or c == "SERBIA" %}
+            {% assign flag = "🇷🇸" %}{% assign clabel = "RS" %}
+          {% elsif c == "BG" or c == "BULGARIA" %}
+            {% assign flag = "🇧🇬" %}{% assign clabel = "BG" %}
+          {% elsif c == "LT" or c == "LITHUANIA" %}
+            {% assign flag = "🇱🇹" %}{% assign clabel = "LT" %}
+          {% elsif c == "LV" or c == "LATVIA" %}
+            {% assign flag = "🇱🇻" %}{% assign clabel = "LV" %}
+          {% elsif c == "EE" or c == "ESTONIA" %}
+            {% assign flag = "🇪🇪" %}{% assign clabel = "EE" %}
+          {% elsif c == "IS" or c == "ICELAND" %}
+            {% assign flag = "🇮🇸" %}{% assign clabel = "IS" %}
+          {% elsif c == "LU" or c == "LUXEMBOURG" %}
+            {% assign flag = "🇱🇺" %}{% assign clabel = "LU" %}
+          {% elsif c == "MT" or c == "MALTA" %}
+            {% assign flag = "🇲🇹" %}{% assign clabel = "MT" %}
+          {% elsif c == "CY" or c == "CYPRUS" %}
+            {% assign flag = "🇨🇾" %}{% assign clabel = "CY" %}
+          {% elsif c == "ONLINE" or c == "VIRTUAL" or c == "REMOTE" %}
+            {% assign flag = "🌐" %}{% assign clabel = "Online" %}
+          {% else %}
+            {% assign flag = nil %}{% assign clabel = post.country %}
+          {% endif %}
+          {% if flag %}
+            <span class="flag-emoji" title="{{ post.country }}">{{ flag }}</span>
+            <span class="flag-label">{{ clabel }}</span>
+          {% else %}
+            <span class="flag-unknown" title="{{ post.country }}">{{ post.country }}</span>
+          {% endif %}
+        {% else %}
+          <span class="flag-unknown">&mdash;</span>
+        {% endif %}
+      </td>
+
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>

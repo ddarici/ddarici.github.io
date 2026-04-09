@@ -1,0 +1,11 @@
+---
+title: "Leader-follower dynamics in medical training: A dual mobile eye-tracking analysis of teacher-student gaze patterns"
+collection: publications
+category: manuscripts
+permalink: /publication/2025-01-01-leader-follower-dynamics-dual-eye-tracking-medical-training
+excerpt: '<img src="https://www.tandfonline.com/action/showCoverImage?doi=10.1080/imte20.v048.i01" width="150" align="left" style="margin-right:15px;"> In clinical apprenticeship, learning is not a passive transfer from teacher to student, it is a dynamic, bidirectional interaction in which the direction of attentional leadership shifts continuously. While instructors typically explain and demonstrate, there are also moments when learners take the lead, for example by pointing out unclear connections. This shifting "dance of leadership" manifests in measurable patterns of visual attention, yet its impact on learning outcomes has remained poorly understood.  <br><br> Using dual mobile eye-tracking in 29 teacher-student pairs during a simulated sonography training, the study computed gaze lag times via diagonal cross-recurrence analysis as a proxy for leader-follower behaviors, and quantified leading behaviors across distinct regions of the training environment in relation to learning performance.  Leader-follower behavior varied substantially across dyads and training phases, with the distribution of attentional leadership between teacher and student emerging as a meaningful predictor of learning outcomes. <br><br> The findings reveal that visual attention in clinical teaching is inherently social and co-regulated not simply directed from expert to novice. Understanding who leads gaze, when, and where opens a new empirical window onto the micro-dynamics of expertise transmission, and carries direct implications for how clinical instructors can be trained to use their own attentional behavior more deliberately in the service of student learning.'
+date: 2025-01-01
+venue: 'Medical Teacher'
+paperurl: 'https://doi.org/10.1080/0142159X.2025.2517719'
+citation: 'Darici, D., Sieg, L., Eismann, H., & Karsten, J. (2025). Leader-follower dynamics in medical training: A dual mobile eye-tracking analysis of teacher-student gaze patterns. <i>Medical Teacher</i>, <i>48</i>(1), 122–130. https://doi.org/10.1080/0142159X.2025.2517719'
+---

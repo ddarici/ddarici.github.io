@@ -1,0 +1,11 @@
+---
+title: "Profiling learning strategies of medical students: A person-centered approach"
+collection: publications
+category: manuscripts
+permalink: /publication/2024-01-01-profiling-learning-strategies-medical-students
+excerpt: '<img src="https://asmepublications.onlinelibrary.wiley.com/cms/asset/157d0c50-7121-4673-85fa-f17db1b1d7b5/medu.v58.11.cover.jpg" width="150" align="left" style="margin-right:15px;"> How students study is as consequential as what they study. Yet research on learning strategies in medical education has largely treated strategy use as a set of isolated variables rather than as coherent, individual patterns. This study took a person-centered approach to move beyond variable-centered analyses and instead identify the naturally occurring profiles of strategy use that medical students actually adopt. <br><br> Using latent profile analysis across a large multi-site sample, four distinct learner profiles were identified.  Profiles differed meaningfully in their combination of cognitive, metacognitive, and resource management strategies, and were differentially associated with academic performance outcomes. Students relying primarily on surface-level strategies showed persistently weaker outcomes, while profiles characterized by deep processing and self-regulation were linked to stronger performance across assessments. <br><br> The findings argue against one-size-fits-all instructional designs and underscore that effective medical education must account for the heterogeneity of how students engage with anatomy learning material. Understanding learner profiles offers a practical foundation for targeted curricular interventions that support students not yet equipped with the strategic repertoire needed to develop genuine, lasting expertise.'
+date: 2024-01-01
+venue: 'Medical Education'
+paperurl: 'https://doi.org/10.1111/medu.15388'
+citation: 'Otto, N., Böckers, A., Shiozawa, T., Brunk, I., Schumann, S., Kugelmann, D., Missler, M., & Darici, D. (2024). Profiling learning strategies of medical students: A person-centered approach. <i>Medical Education</i>, <i>58</i>(11), 1304–1314. https://doi.org/10.1111/medu.15388'
+---

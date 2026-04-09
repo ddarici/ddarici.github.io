@@ -1,0 +1,11 @@
+---
+title: "Medical imaging training with eye movement modeling examples: A randomized controlled study"
+collection: publications
+category: manuscripts
+permalink: /publication/2023-01-01-medical-imaging-training-eye-movement-modeling
+excerpt: '<img src="https://www.tandfonline.com/action/showCoverImage?doi=10.1080/imte20.v045.i08" width="150" align="left" style="margin-right:15px;"> Expertise in medical imaging depends not only on anatomical knowledge but on the ability to direct visual attention efficiently; a skill rarely made explicit in traditional teaching. Eye movement modeling examples (EMMEs) are instructional videos in which an expert''s gaze is superimposed onto the learning material, making otherwise invisible perceptual strategies visible to novice learners. <br><br> This randomized controlled study investigated whether ultrasound training in which an expert''s eye movements are superimposed onto the underlying ultrasound video leads to better learner outcomes  compared to conventional video-based instruction. Preclinical medical students were randomly assigned to either an EMME condition or a control condition and completed a structured abdominal sonography training. <br><br> Results showed that EMME-based instruction led to superior image interpretation performance, supporting the notion that making expert gaze behavior explicit facilitates the acquisition of perceptual diagnostic skills. The study contributes to a growing body of evidence on the role of visual attention in medical image reading and offers a practical, scalable method for integrating expert perceptual modeling into medical imaging curricula.'
+date: 2023-01-01
+venue: 'Medical Teacher'
+paperurl: 'https://doi.org/10.1080/0142159X.2023.2189538'
+citation: 'Darici, D., Masthoff, M., Rischen, R., Schmitz, M., Ohlenburg, H., & Missler, M. (2023). Medical imaging training with eye movement modeling examples: A randomized controlled study. <i>Medical Teacher</i>, <i>45</i>(8), 918–924. https://doi.org/10.1080/0142159X.2023.2189538'
+---

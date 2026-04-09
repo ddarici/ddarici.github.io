@@ -1,0 +1,11 @@
+---
+title: "Eye movement modeling examples in robotic surgery training - A randomized controlled study"
+collection: publications
+category: manuscripts
+permalink: /publication/2025-01-01-eye-movement-modeling-robotic-surgery-training
+excerpt: '<img src="https://ars.els-cdn.com/content/image/1-s2.0-S1931720425X00052-cov150h.gif" width="150" align="left" style="margin-right:15px;"> In robotic-assisted laparoscopic surgery, visual scene interpretation is one of the most demanding challenges trainees face. Effective surgical assistance depends on the ability to rapidly identify anatomical landmarks and follow the operative field — skills that are perceptual before they are procedural. Eye movement modeling examples (EMMEs) offer a principled approach to this challenge by making expert gaze behavior visible during training, guiding novice attention toward clinically critical areas. <br><br> In a randomized controlled trial of 137 medical students, viewing expert eye movements during robotic surgery training did not improve students'' ability to interpret anatomical landmarks in laparoscopic images compared to a control group. Students exposed to EMMEs spent significantly more time engaging with the training material, though this increased engagement did not translate to better performance.  <br><br> The findings challenge previous assumptions about EMMEs'' effectiveness in medical education, suggesting that additional visual cues may compete with rather than complement the intrinsic visual demands of laparoscopic imagery, particularly for advanced learners.  The results point to an important boundary condition for attentional guidance interventions: the complexity and information density of the visual environment itself shapes whether expert gaze cues function as a scaffold or as an additional source of cognitive load.'
+date: 2025-01-01
+venue: 'Journal of Surgical Education'
+paperurl: 'https://doi.org/10.1016/j.jsurg.2025.103539'
+citation: 'Storck, A., Schönefeld, E., Bellstedt, M., Janssen, M., Seifert, K. E., & Darici, D. (2025). Eye movement modeling examples in robotic surgery training: A randomized controlled study. <i>Journal of Surgical Education</i>, <i>82</i>(7), Article 103539. https://doi.org/10.1016/j.jsurg.2025.103539'
+---

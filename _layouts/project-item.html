@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+<style>
+  .project-header-img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    filter: grayscale(100%);
+    transition: filter 0.7s ease;
+    margin-bottom: 2rem;
+    border: 1px solid #eee;
+  }
+  .project-header-img:hover {
+    filter: grayscale(0%);
+  }
+  .doi-link {
+    background: #f0f0f0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 10px 0;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+</style>
+
+<article class="page">
+  <h1>{{ page.title }}</h1>
+  
+  {% if page.image %}
+    <img src="{{ page.image }}" class="project-header-img" alt="{{ page.title }}">
+  {% endif %}
+
+  <div class="page__content">
+    <p><strong>Authors:</strong> {{ page.authors }}</p>
+    <p><strong>Journal:</strong> {{ page.journal }} ({{ page.year }})</p>
+    <a href="https://doi.org/{{ page.doi }}" class="doi-link">View Publication (DOI)</a>
+    
+    <hr>
+    {{ content }}
+  </div>
+</article>

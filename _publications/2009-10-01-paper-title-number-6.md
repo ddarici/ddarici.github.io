@@ -1,0 +1,11 @@
+---
+title: "Transfer of learning in histology: Insights from a longitudinal study"
+collection: publications
+category: manuscripts
+permalink: /publication/2023-01-01-transfer-of-learning-histology-longitudinal
+excerpt: '<img src="https://anatomypubs.onlinelibrary.wiley.com/cms/asset/f44eda06-61a5-4b19-8fb6-ae83c7615db3/ase.v17.2.cover.jpg" width="150" align="left" style="margin-right:15px;"> A central aspiration of anatomical education is that students not only retain course content but can apply their knowledge flexibly to novel problems, a capacity known as transfer of learning. In image-based disciplines like histology, transfer is inseparable from visual expertise: students must learn not just what to know, but where to look and what to attend to when confronting an unfamiliar slide. <br><br> This two-group longitudinal study tracked the development of retention and transfer performance across a ten-week histology course. At three timepoints (0, 10, and 20 sessions), medical students completed theoretical tasks, examined familiar histological slides (retention task), and assessed unfamiliar slides not previously encountered in the course (transfer task). Eye-tracking data revealed that students with histology training showed greater visual activity when solving transfer tasks, reflected in an increased total fixation count, suggesting that developing expertise involves not only knowing more but actively searching more. <br><br> Students in the histology group gradually outperformed controls across all tasks, with the largest performance differences emerging in the second half of the course. Early retention performance and late theoretical knowledge were the strongest predictors of final transfer success. The findings indicate that visual attention and perceptual engagement are measurable markers of growing expertise, and that transfer in histology is a late-emerging competency with important implications for the timing and structure of anatomical curricula.'
+date: 2023-01-01
+venue: 'Anatomical Sciences Education'
+paperurl: 'https://doi.org/10.1002/ase.2363'
+citation: 'Darici, D., Flägel, K., Sternecker, K., & Missler, M. (2024). Transfer of learning in histology: Insights from a longitudinal study. <i>Anatomical Sciences Education</i>, <i>17</i>(2), 274–286. https://doi.org/10.1002/ase.2363'
+---

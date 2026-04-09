@@ -6,8 +6,21 @@ author_profile: true
 ---
 
 {% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+  <div class="wordwrap">You can also find our articles on <a href="{{site.author.googlescholar}}">our Google Scholar profile</a>.</div>
 {% endif %}
+
+<style>
+  .archive__item-title a {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+    color: inherit;
+  }
+  .archive__item-title a:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+</style>
 
 {% include base_path %}
 

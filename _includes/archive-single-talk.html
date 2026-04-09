@@ -1,10 +1,5 @@
-{% include base_path %}
-
-{% if post.header.teaser %}
-  {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
-{% else %}
-  {% assign teaser = site.teaser %}
-{% endif %}
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"></head><body>{% include base_path %}
 
 {% if post.id %}
   {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
@@ -12,31 +7,108 @@
   {% assign title = post.title %}
 {% endif %}
 
-<div class="{{ include.type | default: "list" }}__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    {% if include.type == "grid" and teaser %}
-      <div class="archive__item-teaser">
-        <img src=
-          {% if teaser contains "://" %}
-            "{{ teaser }}"
-          {% else %}
-            "{{ teaser | prepend: "/images/" | prepend: base_path }}"
-          {% endif %}
-          alt="">
-      </div>
+{% if post.header.teaser %}
+  {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
+{% else %}
+  {% assign teaser = site.teaser %}
+{% endif %}
+
+{% if include.type == "grid" %}
+<!-- ═══════════════════════════════════════════════
+     GRID layout (legacy — unchanged from original)
+     ═══════════════════════════════════════════════ -->
+<div class="grid__item">
+  <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
+    {% if teaser %}
+    <div class="archive__item-teaser">
+      <img src="archive-single-talk_files/%7B_%20if%20teaser%20contains" :="" "="" %}{{="" teaser="" }}{%="" else="" |="" prepend:="" images="" base_path="" endif="" %}"="" alt="">
+    </div>
     {% endif %}
-    <h2 class="archive__item-title" itemprop="headline">
-      {% if post.link %}
-        <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
-      {% else %}
-        <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
-      {% endif %}
-    </h2>
+    <h2 class="archive__item-title" itemprop="headline">{{ title }}</h2>
     {% if post.read_time %}
       <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
-    {% if post.date %}<p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {{ post.date | date: '%B %d, %Y' }}</p>{% endif %}
-    {% if post.venue %}<p class="archive__item-excerpt" itemprop="description">{{post.type}}, {{ post.venue }},  {{post.location}} {% endif %}
-    {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>{% endif %}
+    {% if post.date %}
+      <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {{ post.date | date: '%B, %Y' }}</p>
+    {% endif %}
+    {% if post.venue %}
+      <p class="archive__item-excerpt" itemprop="description">{{ post.type }}, {{ post.venue }}, {{ post.location }}</p>
+    {% endif %}
+    {% if post.excerpt %}
+      <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
+    {% endif %}
   </article>
 </div>
+
+{% elsif include.type == "list" %}
+<!-- ═══════════════════════════════════════════════
+     LIST layout (legacy — unchanged from original)
+     ═══════════════════════════════════════════════ -->
+<div class="list__item">
+  <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
+    <h2 class="archive__item-title" itemprop="headline">{{ title }}</h2>
+    {% if post.read_time %}
+      <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
+    {% endif %}
+    {% if post.date %}
+      <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {{ post.date | date: '%B, %Y' }}</p>
+    {% endif %}
+    {% if post.venue %}
+      <p class="archive__item-excerpt" itemprop="description">{{ post.type }}, {{ post.venue }}, {{ post.location }}</p>
+    {% endif %}
+    {% if post.excerpt %}
+      <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
+    {% endif %}
+  </article>
+</div>
+
+{% else %}
+<!-- ═══════════════════════════════════════════════
+     TABLE ROW layout — used by talks.html
+     Renders a <tr> with three columns:
+       1. Conference logo + date
+       2. Talk title + type
+       3. Location
+     ═══════════════════════════════════════════════ -->
+
+
+  <!-- ── Column 1: Conference logo + date + venue ── -->
+  
+    {% if post.logo %}
+      <img src="archive-single-talk_files/%7B%7B%20post.logo%7D%7D" alt="{{ post.venue }} logo">
+    {% else %}
+      <span class="talk-logo-placeholder">{{ post.venue }}</span>
+    {% endif %}
+    {% if post.date %}
+      <span class="talk-date">{{ post.date | date: "%b %d, %Y" }}</span>
+    {% endif %}
+    {% if post.venue %}
+      <span class="talk-venue-label">{{ post.venue }}</span>
+    {% endif %}
+  
+
+  <!-- ── Column 2: Talk title + talk type badge + excerpt ── -->
+  
+    <a href="file:///Users/dogus/Downloads/%7B%7B%20base_path%20%7D%7D%7B%7B%20post.url%20%7D%7D">{{ title }}</a>
+    {% if post.talk_type %}
+      <span class="talk-type-badge">{{ post.talk_type }}</span>
+    {% elsif post.type %}
+      <span class="talk-type-badge">{{ post.type }}</span>
+    {% endif %}
+    {% if post.excerpt %}
+      <div class="talk-excerpt">{{ post.excerpt | markdownify | remove: "<p>" | remove: "</p>" }}</div>
+    {% endif %}
+  
+
+  <!-- ── Column 3: Location ── -->
+  
+    {% if post.location %}
+      <i class="fa fa-map-marker" aria-hidden="true"></i> {{ post.location }}
+    {% else %}
+      —
+    {% endif %}
+  
+
+
+{% endif %}
+</body></html>

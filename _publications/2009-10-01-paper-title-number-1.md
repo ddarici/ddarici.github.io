@@ -1,14 +1,11 @@
 ---
-title: "Paper Title Number 1"
+title: "Implementation of a fully digital histology course in the anatomical teaching curriculum during COVID-19 pandemic"
 collection: publications
 category: manuscripts
-permalink: /publication/2009-10-01-paper-title-number-1
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2009-10-01
-venue: 'Journal 1'
-slidesurl: 'https://academicpages.github.io/files/slides1.pdf'
-paperurl: 'https://academicpages.github.io/files/paper1.pdf'
-bibtexurl: 'https://academicpages.github.io/files/bibtex1.bib'
-citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
+permalink: /publication/2021-01-01-digital-histology-course-covid19
+excerpt: '<img src="https://ars.els-cdn.com/content/image/X09409602.jpg" width="150" align="left" style="margin-right:15px;"> During the COVID-19 pandemic, many medical schools were forced to transition mandatory curriculum courses to online teaching formats, yet little information existed about the feasibility and effectiveness of distance teaching in anatomy. In this paper we report on the rapid redesign and evaluation of a histology course, converting a traditional classroom-based format into a fully digital, synchronous online course. <br><br> The course design incorporated theoretical introductions, an online adaptation of virtual microscopy software previously used in the classroom, and active learning elements including collaborative work in breakout rooms, annotation assignments, and multiple-choice questions, all delivered via the Zoom platform. Two preclinical cohorts of approximately 400 second- and third-semester students were taught in parallel.  <br><br> We evaluated the implementation through student attendance data, summative course performance, and quantitative and qualitative student feedback, offering one of the early empirical accounts of fully digital anatomy education during the pandemic. The findings contribute practical insights into how virtual microscopy and active learning strategies can be integrated into online histology instruction, with implications for curriculum design beyond the pandemic context.'
+date: 2021-01-01
+venue: 'Annals of Anatomy'
+paperurl: 'https://doi.org/10.1016/j.aanat.2021.151718'
+citation: 'Darici D., Reissner C., Brockhaus J., & Missler M. (2021). Implementation of a fully digital histology course in the anatomical teaching curriculum during COVID-19 pandemic. <i>Annals of Anatomy</i>, 236:151718.'
 ---
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
