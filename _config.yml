@@ -23,14 +23,14 @@ repository               : "https://ddarici.github.io/"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile_blink.gif"
-  name             : "Visual Expertise in Medical Education "
+  avatar           : "profile.png"
+  name             : "Visual Expertise in Medical Education"
   pronouns         : # example: "she/her"  
   bio              : ""
   location         : "Germany"
   employer         : "Lausitz Medical School <br> Department of Basic Sciences"
   uri              : # URL
-  email            : "D.Darici@mul-ct.de" 
+  email            : "d.darici@mul-ct.de" 
 
   # Academic websites
   academia         : # URL
