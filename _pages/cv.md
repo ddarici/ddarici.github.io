@@ -181,7 +181,7 @@ author_profile: true
 .alumni-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 0.5px solid #f0f0f0; font-size: 13.5px; }
 </style>
 
-<p class="lab-intro">The Darici Lab is a multidisciplinary research group focused on visual expertise in medical education through eye-tracking methodology. Click a member to view their profile.</p>
+<p class="lab-intro">The Darici Lab is a multidisciplinary research group focused on visual expertise in medical education through eye-tracking methodology.</p>
 
 <div class="lab-layout" id="lab-layout">
   <div class="team-grid" id="team-grid">
