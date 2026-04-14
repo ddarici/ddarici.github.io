@@ -6,8 +6,8 @@ var addressPoints = [
   ],
   [
     "Promoting interprofessionalism in anatomy: A pilot study.<br />Jahrestagung der Anatomischen Gesellschaft; W\u00fcrzburg",
-    49.7933723,
-    9.9309779
+    49.7780356,
+    9.9434769
   ],
   [
     "Erfassung visueller Kompetenzen mit Webcam Eye-Tracking Technologie.<br />GMA Jahrestagung; Halle",
@@ -25,12 +25,12 @@ var addressPoints = [
     7.1027113
   ],
   [
-    "Verbal grounding drives joint attention but not technical skill<br />AMEE Conferences; Vienna",
+    "Verbal grounding drives joint attention but not technical skill.<br />AMEE Conferences; Vienna",
     48.2083537,
     16.3725042
   ],
   [
-    "Eye movements as indicators of learning potential in medical students<br />AMEE Conferences; Vienna",
+    "Eye movements as indicators of learning potential in medical students.<br />AMEE Conferences; Vienna",
     48.2083537,
     16.3725042
   ],
