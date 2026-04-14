@@ -186,25 +186,25 @@ author_profile: true
 <div class="lab-layout" id="lab-layout">
   <div class="team-grid" id="team-grid">
     <div class="member-card" id="card-0">
-      <img src="/images/darici.jpg" class="member-photo" alt="Dogus Darici">
+      <img src="images/darici.jpg" class="member-photo" alt="Dogus Darici">
       <span class="member-name">Dogus Darici</span>
       <span class="member-role">Principal Investigator</span>
       <span class="member-title">Univ.-Prof. Dr.</span>
     </div>
     <div class="member-card" id="card-1">
-      <img src="/images/bellstedt.jpg" class="member-photo" alt="Michelle Bellstedt">
+      <img src="images/bellstedt.jpg" class="member-photo" alt="Michelle Bellstedt">
       <span class="member-name">Michelle Bellstedt</span>
       <span class="member-role">Master student</span>
       <span class="member-title">B. Sc.</span>
     </div>
     <div class="member-card" id="card-2">
-      <img src="/images/bio-photo-2.jpg" class="member-photo" alt="Anastasia Samoukina">
+      <img src="images/bio-photo-2.jpg" class="member-photo" alt="Anastasia Samoukina">
       <span class="member-name">Anastasia Samoukina</span>
       <span class="member-role">Doctoral Student</span>
       <span class="member-title">M. Sc.</span>
     </div>
     <div class="member-card" id="card-3">
-      <img src="/images/bio-photo-2.jpg" class="member-photo" alt="René Bieber">
+      <img src="images/bio-photo-2.jpg" class="member-photo" alt="René Bieber">
       <span class="member-name">René Bieber</span>
       <span class="member-role">Technician</span>
       <span class="member-title"></span>
@@ -223,7 +223,7 @@ document.addEventListener('DOMContentLoaded', function() {
       name: "Dogus Darici",
       role: "Principal Investigator",
       degree: "Univ.-Prof. Dr.",
-      photo: "/images/darici.jpg",
+      photo: "images/darici.jpg",
       affiliation: "Lausitz Medical School, Department of Basic Sciences",
       research: "Visual expertise in medical education; Eye-tracking methodology.",
 education: [
@@ -292,7 +292,7 @@ education: [
       name: "Michelle Bellstedt",
       role: "Master student",
       degree: "B. Sc.",
-      photo: "/images/bellstedt.jpg",
+      photo: "images/bellstedt.jpg",
       affiliation: "University of Münster",
       research: "Visual expertise in medical education; Eye-tracking methodology.",
       education: [
@@ -322,7 +322,7 @@ education: [
       name: "Anastasia Samoukina",
       role: "Doctoral Student",
       degree: "M. Sc.",
-      photo: "/images/bio-photo-2.jpg",
+      photo: "images/bio-photo-2.jpg",
       affiliation: "under construction",
       research: "",
       education: [],
@@ -336,7 +336,7 @@ education: [
       name: "René Bieber",
       role: "Technician",
       degree: "",
-      photo: "/images/bio-photo-2.jpg",
+      photo: "images/bio-photo-2.jpg",
       affiliation: "under construction",
       research: "",
       education: [],
