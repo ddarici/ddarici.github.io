@@ -230,6 +230,12 @@ author_profile: true
       <span class="member-role">Research Assistant</span>
       <span class="member-title"></span>
     </div>
+            <div class="member-card" id="card-8">
+      <img src="/images/kuemmel.jpg" class="member-photo" alt="Marie Kümmel">
+      <span class="member-name">Marie Kümmel</span>
+      <span class="member-role">Postdoctoral Researcher</span>
+      <span class="member-title"></span>
+    </div>
   </div>
 
   <div class="side-panel" id="side-panel">
