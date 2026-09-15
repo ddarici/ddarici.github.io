@@ -193,7 +193,7 @@ author_profile: true
     <div class="member-card" id="card-1">
       <img src="/images/bellstedt.jpg" class="member-photo" alt="Michelle Bellstedt">
       <span class="member-name">Michelle Bellstedt</span>
-      <span class="member-role">Master student</span>
+      <span class="member-role">Master Student</span>
     </div>
     <div class="member-card" id="card-2">
       <img src="/images/samoukina.jpg" class="member-photo" alt="Anastasia Samoukina">
@@ -221,7 +221,7 @@ author_profile: true
     <div class="member-card" id="card-6">
       <img src="/images/kruse.jpg" class="member-photo" alt="Devin Kruse">
       <span class="member-name">Devin Kruse</span>
-      <span class="member-role">Master student</span>
+      <span class="member-role">Master Student</span>
       <span class="member-title"></span>
     </div>
         <div class="member-card" id="card-7">
