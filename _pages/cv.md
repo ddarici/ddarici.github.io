@@ -230,10 +230,16 @@ author_profile: true
       <span class="member-role">Research Assistant</span>
       <span class="member-title"></span>
     </div>
-            <div class="member-card" id="card-8">
+       <div class="member-card" id="card-8">
       <img src="/images/kuemmel.jpg" class="member-photo" alt="Marie Kümmel">
       <span class="member-name">Marie Kümmel</span>
       <span class="member-role">Postdoctoral Researcher</span>
+      <span class="member-title"></span>
+    </div>
+      <div class="member-card" id="card-9">
+      <img src="/images/suender.jpg" class="member-photo" alt="Sabine Sünder">
+      <span class="member-name">Sabine Sünder</span>
+      <span class="member-role">Team Assistant</span>
       <span class="member-title"></span>
     </div>
   </div>
