@@ -11,6 +11,8 @@ suspicious pattern in a histology slide, or reading the subtle cues of a patient
 
 This is the question that drives our work.
 
+<img src="/images/group.jpg">
+
 **Contacts**
 
 <i class="fas fa-fw fa-envelope"></i> d.darici\<at\>mul-ct.de  
@@ -21,7 +23,6 @@ We are a research group that use eye-tracking to measure visual expertise in lab
 
 Building on this, we develop and test instructional interventions such as eye movement modelling examples, and AI-assisted tools that make expert attention explicit and learnable. We evaluate these approaches in cross-sectional and randomised controlled studies across a range of medical domains, including histology, sonography, radiology, and robotic surgery.
 
-<img src="/images/group.jpg">
 
 ## Why It Matters
 
