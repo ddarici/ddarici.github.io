@@ -242,6 +242,12 @@ author_profile: true
       <span class="member-role">Team Assistant</span>
       <span class="member-title"></span>
     </div>
+          <div class="member-card" id="card-10">
+      <img src="/images/lorenz.jpg" class="member-photo" alt="Johannes Lorenz">
+      <span class="member-name">Johannes Lorenz</span>
+      <span class="member-role">Master Student</span>
+      <span class="member-title"></span>
+    </div>
   </div>
 
   <div class="side-panel" id="side-panel">
