@@ -12,7 +12,7 @@ site_theme               : "default" # The available themes options are "default
 title                    : "Darici Lab | Prof. Dogus Darici"
 title_separator          : "-"
 name                     : &name "Darici Lab | Prof. Dogus Darici"
-description              : &description "This is the webpage of the Darici Lab | Prof. Dogus Darici"   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "Prof. Dogus Darici's research group uses eye-tracking to study how visual expertise develops in medical education"   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : "https://ddarici.github.io/" # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
